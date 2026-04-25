@@ -1,0 +1,109 @@
+/* guest-details.css */
+
+.slim-header {
+    padding: 24px 48px;
+}
+
+.guest-details-page {
+    background-color: #f7f9fa;
+}
+
+.guest-forms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.guest-form-card {
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+
+.guest-form-header {
+    background: var(--light-teal);
+    padding: 16px 24px;
+    border-bottom: 1px solid #d0ebe8;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.guest-title {
+    font-size: 1.25rem;
+    color: var(--dark-teal);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge-optional {
+    background: #e2e8f0;
+    color: #475569;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.badge-optional.hidden {
+    display: none;
+}
+
+.guest-subtitle {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.guest-form-body {
+    padding: 24px;
+}
+
+.form-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group label .req {
+    color: var(--primary-red);
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+    background: #fff;
+    color: var(--text-primary);
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: var(--dark-teal);
+    outline: none;
+}
+
+/* Specific Summary adjustments */
+.summary-items {
+    padding: 16px 20px;
+}
+
+.mt-3 { margin-top: 16px; }
+.w-100 { width: 100%; }
+
+.btn-delete-item {
+    background: none; border: none; font-size: 1.1rem; cursor: pointer; color: #aaa; transition: color 0.2s;
+}
+.btn-delete-item:hover { color: var(--primary-red); }
+.summary-item-price-wrap { display: flex; align-items: center; gap: 12px; }
+
+@media (max-width: 700px) {
+    .form-row-2 { grid-template-columns: 1fr; gap: 16px; }
+    .slim-header { padding: 24px 20px; }
+}

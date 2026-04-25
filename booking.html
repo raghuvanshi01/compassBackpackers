@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room | Coal Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="top-accent-line"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Coal Capital</h1>
+                    <span>BENGALURU - KARNATAKA</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">← Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Sub-header -->
+    <div class="page-header">
+        <div class="page-header-inner">
+            <div>
+                <h2>Room types & Pricing</h2>
+                <p>Select beds and add meal preferences for each room type.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="booking-layout">
+
+        <!-- LEFT: Room List -->
+        <div class="rooms-list">
+
+            <!-- Room 1: 6-Bed Female Dorm -->
+            <div class="room-card"
+                 data-id="female-6"
+                 data-name="6-Bed Female Dorm"
+                 data-base-price="700"
+                 data-max-beds="6"
+                 data-desc="Cozy female-only dorm perfect for female solo travelers seeking privacy and security."
+                 data-amenities="Blanket,Bedside lamp,Fan,Linen,Locker,Privacy curtain,Wi-Fi,Bunk bed,Daily housekeeping,Washroom,Geyser">
+                 
+                <div class="room-card-inner">
+                    <div class="room-img-col">
+                        <div class="room-img-wrapper" title="Click for details">
+                            <img src="room.png" alt="6-Bed Female Dorm">
+                            <span class="img-counter">1/5</span>
+                        </div>
+                        <div class="amenity-tags">
+                            <span>Blanket</span><span>Lamp</span><span>Fan</span><span>Linen</span><span>Locker</span><span>Privacy Curtains</span>
+                        </div>
+                    </div>
+                    <div class="room-info-col">
+                        <div class="room-info-top">
+                            <h3>Bed in 6-Bed Female Dormitory</h3>
+                            <span class="base-badge">₹700 / bed / night</span>
+                        </div>
+                        <div class="meal-options-grid">
+                            <div class="meal-block">
+                                <h5>Bed Only</h5><p class="meal-price">₹700<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="6" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block highlight-block">
+                                <h5>Bed + Breakfast</h5><p class="meal-price">₹850<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="6" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block">
+                                <h5>Bed + All Meals</h5><p class="meal-price">₹1200<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="6" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Toggle Availability -->
+                        <div class="cal-toggle-wrap">
+                            <div class="cal-toggle-btn">📅 Availability calendar <span class="arrow">▼</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Expanded Calendar Area -->
+                <div class="calendar-wrapper hidden">
+                    <div class="calendar-header">
+                        <div class="cal-info">
+                            <svg class="cal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>Upcoming 7 Days</span>
+                        </div>
+                        <div class="cal-price-night">₹700 / night <button class="btn-select-bed">Select Bed</button></div>
+                    </div>
+                    <div class="calendar-ribbon"></div>
+                </div>
+            </div>
+
+            <!-- Room 2: 6-Bed Mixed Dorm -->
+            <div class="room-card"
+                 data-id="mixed-6"
+                 data-name="6-Bed Mixed Dorm"
+                 data-base-price="650"
+                 data-max-beds="6"
+                 data-desc="Ample 140 sq ft dorm - perfect for socializing."
+                 data-amenities="Blanket,Bedside lamp,Fan,Linen,Locker,Privacy curtain,Wi-Fi,Bunk bed,Daily housekeeping,Washroom,Geyser">
+                 
+                <div class="room-card-inner">
+                    <div class="room-img-col">
+                        <div class="room-img-wrapper" title="Click for details">
+                            <img src="room.png" alt="6-Bed Mixed Dorm">
+                            <span class="img-counter">1/5</span>
+                        </div>
+                        <div class="amenity-tags">
+                            <span>Blanket</span><span>Fan</span><span>Linen</span><span>Non Smoking</span><span>Locker</span><span>Washroom</span>
+                        </div>
+                    </div>
+                    <div class="room-info-col">
+                        <div class="room-info-top">
+                            <h3>Bed in 6-Bed Mixed Dormitory</h3>
+                            <span class="base-badge">₹650 / bed / night</span>
+                        </div>
+                        <div class="meal-options-grid">
+                            <div class="meal-block">
+                                <h5>Bed Only</h5><p class="meal-price">₹650<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="6" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block highlight-block">
+                                <h5>Bed + Breakfast</h5><p class="meal-price">₹800<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="6" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block">
+                                <h5>Bed + All Meals</h5><p class="meal-price">₹1150<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="6" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="cal-toggle-wrap">
+                            <div class="cal-toggle-btn">📅 Availability calendar <span class="arrow">▼</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-wrapper hidden">
+                    <div class="calendar-header">
+                        <div class="cal-info"><svg class="cal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Upcoming 7 Days</span></div>
+                        <div class="cal-price-night">₹650 / night <button class="btn-select-bed">Select Bed</button></div>
+                    </div>
+                    <div class="calendar-ribbon"></div>
+                </div>
+            </div>
+
+            <!-- Room 3: 12-Bed Mixed Dorm A -->
+            <div class="room-card"
+                 data-id="mixed-12a"
+                 data-name="12-Bed Mixed Dorm (A)"
+                 data-base-price="500"
+                 data-max-beds="12"
+                 data-desc="Spacious 12-bed dormitory designed for budget-conscious travelers and groups."
+                 data-amenities="Blanket,Fan,Linen,Locker,Bunk bed,Washroom,Wi-Fi,Charging point">
+                 
+                <div class="room-card-inner">
+                    <div class="room-img-col">
+                        <div class="room-img-wrapper" title="Click for details">
+                            <img src="room.png" alt="12-Bed Mixed Dorm A">
+                            <span class="img-counter">1/5</span>
+                        </div>
+                        <div class="amenity-tags">
+                            <span>Blanket</span><span>Fan</span><span>Linen</span><span>Locker</span><span>Ensuite Washroom</span>
+                        </div>
+                    </div>
+                    <div class="room-info-col">
+                        <div class="room-info-top">
+                            <h3>Bed in 12-Bed Mixed Dormitory (A)</h3>
+                            <span class="base-badge">₹500 / bed / night</span>
+                        </div>
+                        <div class="meal-options-grid">
+                            <div class="meal-block">
+                                <h5>Bed Only</h5><p class="meal-price">₹500<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="12" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block highlight-block">
+                                <h5>Bed + Breakfast</h5><p class="meal-price">₹650<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="12" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block">
+                                <h5>Bed + All Meals</h5><p class="meal-price">₹1000<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="12" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                        </div>
+
+                        <div class="cal-toggle-wrap">
+                            <div class="cal-toggle-btn">📅 Availability calendar <span class="arrow">▼</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-wrapper hidden">
+                    <div class="calendar-header">
+                        <div class="cal-info"><svg class="cal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Upcoming 7 Days</span></div>
+                        <div class="cal-price-night">₹500 / night <button class="btn-select-bed">Select Bed</button></div>
+                    </div>
+                    <div class="calendar-ribbon"></div>
+                </div>
+            </div>
+
+            <!-- Room 4: 12-Bed Mixed Dorm B -->
+            <div class="room-card"
+                 data-id="mixed-12b"
+                 data-name="12-Bed Mixed Dorm (B)"
+                 data-base-price="500"
+                 data-max-beds="12"
+                 data-desc="Spacious 12-bed dormitory designed for budget-conscious travelers and groups."
+                 data-amenities="Blanket,Fan,Linen,Locker,Bunk bed,Washroom,Wi-Fi,Charging point">
+                 
+                 <div class="room-card-inner">
+                    <div class="room-img-col">
+                        <div class="room-img-wrapper" title="Click for details">
+                            <img src="room.png" alt="12-Bed Mixed Dorm B">
+                            <span class="img-counter">1/5</span>
+                        </div>
+                        <div class="amenity-tags">
+                            <span>Blanket</span><span>Fan</span><span>Linen</span><span>Locker</span><span>Ensuite Washroom</span>
+                        </div>
+                    </div>
+                    <div class="room-info-col">
+                        <div class="room-info-top">
+                            <h3>Bed in 12-Bed Mixed Dormitory (B)</h3>
+                            <span class="base-badge">₹500 / bed / night</span>
+                        </div>
+                        <div class="meal-options-grid">
+                            <div class="meal-block">
+                                <h5>Bed Only</h5><p class="meal-price">₹500<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="12" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block highlight-block">
+                                <h5>Bed + Breakfast</h5><p class="meal-price">₹650<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="12" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block">
+                                <h5>Bed + All Meals</h5><p class="meal-price">₹1000<span>/night</span></p>
+                                <div class="qty-row"><label>Beds</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="12" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                        </div>
+
+                        <div class="cal-toggle-wrap">
+                            <div class="cal-toggle-btn">📅 Availability calendar <span class="arrow">▼</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-wrapper hidden">
+                    <div class="calendar-header">
+                        <div class="cal-info"><svg class="cal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Upcoming 7 Days</span></div>
+                        <div class="cal-price-night">₹500 / night <button class="btn-select-bed">Select Bed</button></div>
+                    </div>
+                    <div class="calendar-ribbon"></div>
+                </div>
+            </div>
+
+            <!-- Room 5: Deluxe Suite - Sunrise -->
+            <div class="room-card"
+                 data-id="deluxe-sunrise"
+                 data-name="Deluxe Suite — Sunrise"
+                 data-base-price="2500"
+                 data-max-beds="1"
+                 data-desc="Premium private room with luxurious amenities, perfect for couples wanting an upgrade."
+                 data-amenities="Blanket,Charging point,Daily housekeeping,Geyser,Linen,Pillow,Seating area,Shower gel,Washroom,Wi-Fi,Wardrobe,AC">
+                 
+                <div class="room-card-inner">
+                    <div class="room-img-col">
+                        <div class="room-img-wrapper" title="Click for details">
+                            <img src="room.png" alt="Deluxe Suite Sunrise">
+                            <span class="img-counter">1/5</span>
+                        </div>
+                        <div class="amenity-tags">
+                            <span>AC</span><span>Washroom</span><span>TV</span><span>King Bed</span><span>Balcony</span>
+                        </div>
+                    </div>
+                    <div class="room-info-col">
+                        <div class="room-info-top">
+                            <h3>Deluxe Suite — Sunrise</h3>
+                            <span class="base-badge">₹2500 / room / night</span>
+                        </div>
+                        <div class="meal-options-grid">
+                            <div class="meal-block">
+                                <h5>Room Only</h5><p class="meal-price">₹2500<span>/night</span></p>
+                                <div class="qty-row"><label>Rooms</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="1" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block highlight-block">
+                                <h5>Room + Breakfast</h5><p class="meal-price">₹2800<span>/night</span></p>
+                                <div class="qty-row"><label>Rooms</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="1" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block">
+                                <h5>Room + All Meals</h5><p class="meal-price">₹3500<span>/night</span></p>
+                                <div class="qty-row"><label>Rooms</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="1" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                        </div>
+
+                        <div class="cal-toggle-wrap">
+                            <div class="cal-toggle-btn">📅 Availability calendar <span class="arrow">▼</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-wrapper hidden">
+                    <div class="calendar-header">
+                        <div class="cal-info"><svg class="cal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Upcoming 7 Days</span></div>
+                        <div class="cal-price-night">₹2500 / night <button class="btn-select-bed">Select Room</button></div>
+                    </div>
+                    <div class="calendar-ribbon"></div>
+                </div>
+            </div>
+
+            <!-- Room 6: Deluxe Suite - Skyline -->
+            <div class="room-card"
+                 data-id="deluxe-skyline"
+                 data-name="Deluxe Suite — Skyline"
+                 data-base-price="2800"
+                 data-max-beds="1"
+                 data-desc="Our top-tier premium private room featuring spectacular city skyline views."
+                 data-amenities="Blanket,Charging point,Daily housekeeping,Geyser,Linen,Pillow,Seating area,Shower gel,Washroom,Wi-Fi,Wardrobe,AC">
+                 
+                <div class="room-card-inner">
+                    <div class="room-img-col">
+                        <div class="room-img-wrapper" title="Click for details">
+                            <img src="room.png" alt="Deluxe Suite Skyline">
+                            <span class="img-counter">1/5</span>
+                        </div>
+                        <div class="amenity-tags">
+                            <span>AC</span><span>Washroom</span><span>TV</span><span>Queen Bed</span><span>City View</span>
+                        </div>
+                    </div>
+                    <div class="room-info-col">
+                        <div class="room-info-top">
+                            <h3>Deluxe Suite — Skyline</h3>
+                            <span class="base-badge">₹2800 / room / night</span>
+                        </div>
+                        <div class="meal-options-grid">
+                            <div class="meal-block">
+                                <h5>Room Only</h5><p class="meal-price">₹2800<span>/night</span></p>
+                                <div class="qty-row"><label>Rooms</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="1" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block highlight-block">
+                                <h5>Room + Breakfast</h5><p class="meal-price">₹3100<span>/night</span></p>
+                                <div class="qty-row"><label>Rooms</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="1" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                            <div class="meal-block">
+                                <h5>Room + All Meals</h5><p class="meal-price">₹3800<span>/night</span></p>
+                                <div class="qty-row"><label>Rooms</label><div class="quantity-selector"><button type="button" class="qty-btn minus">−</button><input type="number" class="bed-qty" value="0" min="0" max="1" readonly><button type="button" class="qty-btn plus">+</button></div></div>
+                            </div>
+                        </div>
+
+                        <div class="cal-toggle-wrap">
+                            <div class="cal-toggle-btn">📅 Availability calendar <span class="arrow">▼</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-wrapper hidden">
+                    <div class="calendar-header">
+                        <div class="cal-info"><svg class="cal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><span>Upcoming 7 Days</span></div>
+                        <div class="cal-price-night">₹2800 / night <button class="btn-select-bed">Select Room</button></div>
+                    </div>
+                    <div class="calendar-ribbon"></div>
+                </div>
+            </div>
+
+        </div><!-- /.rooms-list -->
+
+        <!-- RIGHT: Sticky Summary -->
+        <aside class="summary-panel">
+            <div class="summary-card">
+                <h4>Summary</h4>
+                <div class="summary-body" id="summaryBody">
+                    <div class="summary-empty" id="summaryEmpty">
+                        <div class="summary-empty-icon">🛏️</div>
+                        <p>Select a bed to get your stay summary here.</p>
+                    </div>
+                    <ul class="summary-items" id="summaryItems"></ul>
+                </div>
+                <div class="summary-footer" id="summaryFooter" style="display:none;">
+                    <div class="summary-calculations" id="summaryCalculations">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="summary-grand-total">
+                        <span>Grand Total</span>
+                        <strong id="grandTotal">₹0</strong>
+                    </div>
+                    <button class="btn-book-all" id="bookAllBtn">Confirm Booking →</button>
+                </div>
+            </div>
+        </aside>
+
+    </div><!-- /.booking-layout -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="bottom-accent-line"></div>
+        <div class="footer-bottom">
+            <p>© 2024 Coal Capital - Bengaluru - all rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- ROOM DETAILS MODAL -->
+    <div class="modal-overlay hidden" id="roomDetailsModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-main-img" id="modalMainImg"></div>
+                    <div class="modal-thumbnails">
+                        <img src="room.png" alt="Thumb">
+                        <img src="room.png" alt="Thumb">
+                        <img src="room.png" alt="Thumb">
+                        <img src="room.png" alt="Thumb">
+                        <img src="room.png" alt="Thumb">
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <h2 id="modalTitle">Bed in 4 Bed Mixed Dormitory</h2>
+                    <div class="modal-section">
+                        <h4>Room Details</h4>
+                        <p id="modalDesc">Ample 140 sq ft dorm - perfect for socializing</p>
+                    </div>
+                    <div class="modal-section">
+                        <h4>Room Amenities</h4>
+                        <div class="modal-amenities-grid" id="modalAmenitiesList">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emojis/Icons map for JS Injection -->
+    <template id="amenityIconTemplate">
+        <span class="am-icon-map">
+            <span data-name="Bedside lamp">🛋️</span>
+            <span data-name="Blanket">🛏️</span>
+            <span data-name="Bunk bed">🪜</span>
+            <span data-name="Charging point">🔌</span>
+            <span data-name="Daily housekeeping">🧹</span>
+            <span data-name="Fan">🪭</span>
+            <span data-name="Geyser">🚿</span>
+            <span data-name="Linen">🧾</span>
+            <span data-name="Locker">🎒</span>
+            <span data-name="Pillow">🛏️</span>
+            <span data-name="Privacy curtain">⛺</span>
+            <span data-name="Seating area">🪑</span>
+            <span data-name="Shower gel">🧴</span>
+            <span data-name="Washroom">🚽</span>
+            <span data-name="Wi-Fi">📶</span>
+            <span data-name="Wardrobe">🚪</span>
+            <span data-name="AC">❄️</span>
+        </span>
+    </template>
+
+    <!-- PHONE LOGIN MODAL -->
+    <div class="modal-overlay hidden" id="phoneModal">
+        <div class="modal-content otp-modal-content">
+            <button class="modal-close" id="phoneModalClose">✕</button>
+            <div id="otpStepPhone">
+                <h3>Login to Confirm</h3>
+                <p>Please enter your mobile number to proceed with the booking.</p>
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <div class="phone-input-wrap">
+                        <span class="country-code">+91</span>
+                        <input type="tel" id="mobileNumberInput" placeholder="Enter 10-digit number" maxlength="10">
+                    </div>
+                </div>
+                <button class="btn-primary w-100 mt-3" id="btnRequestOtp">Get OTP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTP VERIFICATION MODAL -->
+    <div class="modal-overlay hidden" id="otpVerifyModal">
+        <div class="modal-content otp-modal-content">
+            <button class="modal-close" id="otpVerifyModalClose">✕</button>
+            <div id="otpStepVerify">
+                <h3>Verification</h3>
+                <p>Enter the 4-digit OTP sent to <span id="displayMobile"></span></p>
+                <div class="otp-inputs">
+                    <input type="text" class="otp-digit" maxlength="1">
+                    <input type="text" class="otp-digit" maxlength="1">
+                    <input type="text" class="otp-digit" maxlength="1">
+                    <input type="text" class="otp-digit" maxlength="1">
+                </div>
+                <button class="btn-primary w-100 mt-3" id="btnVerifyOtp">Verify & Proceed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

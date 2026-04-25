@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Details | Coal Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="guest-details.css">
+</head>
+<body class="guest-details-page">
+    <div class="top-accent-line"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Coal Capital</h1>
+                    <span>BENGALURU - KARNATAKA</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="booking.html">← Back to Rooms</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header slim-header">
+        <div class="page-header-inner">
+            <div>
+                <h2>Guest Information</h2>
+                <p>Please enter details for all guests to secure your booking.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="booking-layout">
+
+        <!-- LEFT: Guest Forms -->
+        <div class="guest-forms-container" id="formsContainer">
+            <!-- Dynamically populated by guest-details.js -->
+        </div>
+
+        <!-- RIGHT: Sticky Summary -->
+        <aside class="summary-panel">
+            <div class="summary-card">
+                <h4>Your Booking</h4>
+                <div class="summary-body">
+                    <ul class="summary-items" id="summaryItems">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+                <div class="summary-footer">
+                    <div class="coupon-section" style="display: flex; gap: 8px; margin-bottom: 16px;">
+                        <input type="text" id="couponInput" placeholder="Promo Code" style="flex:1; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        <button class="btn-primary" id="btnApplyCoupon" style="padding: 10px 16px;">Apply</button>
+                    </div>
+                    <div class="summary-calculations" id="summaryCalculations">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="summary-grand-total">
+                        <span>Grand Total</span>
+                        <strong id="grandTotal">₹0</strong>
+                    </div>
+                    <button class="btn-primary w-100 mt-3" id="btnFinalizeBooking">Proceed to Payment</button>
+                    <p class="terms-text mt-3 text-muted" style="font-size: 0.8rem; text-align: center;">By proceeding, you agree to our Terms & Conditions and Privacy Policy.</p>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="bottom-accent-line"></div>
+        <div class="footer-bottom">
+            <p>© 2024 Coal Capital - Bengaluru - all rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Form Template -->
+    <template id="guestFormTemplate">
+        <div class="guest-form-card">
+            <div class="guest-form-header">
+                <h3 class="guest-title">Guest 1 <span class="badge-optional hidden">Optional</span></h3>
+                <span class="guest-subtitle">For Bed in 6-Bed Female Dormitory</span>
+            </div>
+            <div class="guest-form-body">
+                <div class="form-row-2">
+                    <div class="input-group">
+                        <label>Full Name (As per Govt ID) <span class="req">*</span></label>
+                        <input type="text" placeholder="e.g. Jane Doe" required class="gf-name">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address <span class="req">*</span></label>
+                        <input type="email" placeholder="e.g. jane@example.com" required class="gf-email">
+                    </div>
+                </div>
+                <div class="form-row-2 mt-3">
+                    <div class="input-group">
+                        <label>Mobile Number <span class="req">*</span></label>
+                        <input type="tel" placeholder="e.g. 9876543210" required class="gf-mobile">
+                    </div>
+                    <div class="input-group">
+                        <label>Date of Birth <span class="req">*</span></label>
+                        <input type="date" required class="gf-dob">
+                    </div>
+                </div>
+                <div class="form-row-2 mt-3">
+                    <div class="input-group">
+                        <label>Gender <span class="req">*</span></label>
+                        <select required class="gf-gender">
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Nationality <span class="req">*</span></label>
+                        <select required class="gf-nationality">
+                            <option value="">Select Country</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="guest-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collab with Us | Coal Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .collab-page-header {
+            background-color: var(--light-teal);
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+        .collab-form-container {
+            max-width: 600px;
+            margin: -20px auto 80px;
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-medium);
+            position: relative;
+            z-index: 10;
+        }
+        .cf-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        .cf-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .cf-group input, .cf-group select, .cf-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            background: #fdfdfd;
+            transition: border-color 0.2s;
+        }
+        .cf-group input:focus, .cf-group select:focus, .cf-group textarea:focus {
+            outline: none;
+            border-color: var(--dark-teal);
+            background: #fff;
+        }
+        .cf-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .phone-input-wrap { display: flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fdfdfd; }
+        .phone-input-wrap:focus-within { border-color: var(--dark-teal); background: #fff;}
+        .country-code { padding: 12px 16px; background: #f5f5f5; border-right: 1px solid #ddd; font-weight: 500; color: #555; }
+        .phone-input-wrap input { border: none; margin-bottom: 0; border-radius: 0; background: transparent; }
+        .phone-input-wrap input:focus { border-color: transparent; }
+    </style>
+</head>
+<body>
+    <div class="top-accent-line"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Coal Capital</h1>
+                    <span>BENGALURU - KARNATAKA</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">← Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="collab-page-header">
+        <div class="section-pill dark-teal-pill">APPLY NOW</div>
+        <h2>Collab with Coal Capital</h2>
+        <p class="subtitle" style="max-width: 600px; margin: 16px auto 0;">We're always looking for vibrant creators, artists, and partners. Fill out the application below and we'll get back to you!</p>
+    </div>
+
+    <div class="collab-form-container">
+        <form id="collabForm">
+            <div class="cf-group">
+                <label>Category</label>
+                <input type="text" id="collabCategory" readonly style="background-color: #f1f3f5; color: #555; font-weight: 500; cursor: not-allowed;">
+            </div>
+            <div class="cf-group">
+                <label>Full Name *</label>
+                <input type="text" id="collabName" required placeholder="e.g. Jane Doe">
+            </div>
+            <div class="cf-group">
+                <label>Email Address *</label>
+                <input type="email" id="collabEmail" required placeholder="jane@example.com">
+            </div>
+            <div class="cf-group">
+                <label>Mobile Number *</label>
+                <div class="phone-input-wrap">
+                    <span class="country-code">+91</span>
+                    <input type="tel" id="collabPhone" required placeholder="9876543210" maxlength="10">
+                </div>
+            </div>
+            <div class="cf-group">
+                <label>Nationality *</label>
+                <select id="collabNationality" required>
+                    <option value="">Select Country</option>
+                </select>
+            </div>
+            <div class="cf-group">
+                <label>Collaboration Details *</label>
+                <textarea id="collabDetails" required placeholder="Tell us more about how you want to partner with us, links to your portfolio or socials, etc."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary w-100" style="width: 100%;">Submit Application</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="bottom-accent-line"></div>
+        <div class="footer-bottom">
+            <p>© 2024 Coal Capital - Bengaluru - all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="collab.js"></script>
+</body>
+</html>

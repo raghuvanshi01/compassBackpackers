@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Capital | Hostel in Bengaluru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top thin colourful line -->
+    <div class="top-accent-line"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Coal Capital</h1>
+                    <span>BENGALURU - KARNATAKA</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="#rooms">Rooms</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text-pill">HOSTEL - INDIA</div>
+            <h2 class="hero-headline">Your next<br>adventure<br>starts here.</h2>
+            <div class="watermark-compass">
+                <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-card">
+            <div class="booking-header">
+                <h3>Book your stay</h3>
+                <div class="target-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#d34e40" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"></path></svg>
+                </div>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>CHECK-IN</label>
+                        <input type="date" id="checkin" name="checkin" value="2024-04-26">
+                    </div>
+                    <div class="input-group">
+                        <label>CHECK-OUT</label>
+                        <input type="date" id="checkout" name="checkout" value="2024-04-28">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Stay Longer Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-pill yellow-pill">EXTENDED STAYS</div>
+            <h2>Stay longer, pay less.</h2>
+            <p class="subtitle">Built for slow travelers, digital nomads, and wanderers who want to truly know a city.</p>
+            
+            <div class="pricing-grid">
+                <div class="price-card red-theme extended-stay-card" style="cursor: pointer;" data-discount="10" data-min-days="5">
+                    <div class="star-icon">✦</div>
+                    <h4>5+ days</h4>
+                    <p>Save 10%</p>
+                    <div class="badge">10%</div>
+                </div>
+                <div class="price-card teal-theme extended-stay-card" style="cursor: pointer;" data-discount="20" data-min-days="10">
+                    <div class="star-icon">✦</div>
+                    <h4>10+ days</h4>
+                    <p>Save 20%</p>
+                    <div class="badge">20%</div>
+                </div>
+                <div class="price-card purple-theme extended-stay-card" style="cursor: pointer;" data-discount="30" data-min-days="32">
+                    <div class="star-icon">✦</div>
+                    <h4>1+ months</h4>
+                    <p>Save 30%</p>
+                    <div class="badge">30%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travelling Together Section -->
+    <section class="groups-section">
+        <div class="container">
+            <div class="section-pill dark-teal-pill">GROUPS</div>
+            <h2>Travelling together?</h2>
+            <p class="subtitle">We do group booking deals — ask about event spaces and custom trip packages.</p>
+            
+            <div class="groups-grid">
+                <div class="group-card">
+                    <div class="icon-circle orange-icon">%</div>
+                    <div class="card-text">
+                        <h4>Up to 20% off</h4>
+                        <p>Whole house</p>
+                    </div>
+                </div>
+                <div class="group-card">
+                    <div class="icon-circle yellow-icon">👥</div>
+                    <div class="card-text">
+                        <h4>Group</h4>
+                        <p>Bookings</p>
+                    </div>
+                </div>
+                <div class="group-card">
+                    <div class="icon-circle purple-icon">★</div>
+                    <div class="card-text">
+                        <h4>Priority</h4>
+                        <p>Common spaces</p>
+                    </div>
+                </div>
+                <div class="group-card">
+                    <div class="icon-circle green-icon">D</div>
+                    <div class="card-text">
+                        <h4>Dedicated host</h4>
+                        <p>Event spaces</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-outline-dark">Book Now <span class="arrow">↗</span></button>
+            <div class="watermark-compass groups-watermark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="rgba(31, 107, 104, 0.08)" stroke-width="0.5"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="section-pill pink-pill">AMENITIES</div>
+            <h2>Everything a backpacker needs.</h2>
+            
+            <div class="amenities-grid">
+                <!-- Row 1 -->
+                <div class="amenity-card blue-amenity">
+                    <div class="am-icon">📶</div>
+                    <p>Free Wi-Fi</p>
+                </div>
+                <div class="amenity-card green-amenity">
+                    <div class="am-icon">⏱</div>
+                    <p>24/7 check-in</p>
+                </div>
+                <div class="amenity-card orange-amenity">
+                    <div class="am-icon">💻</div>
+                    <p>Co-work space</p>
+                </div>
+                <!-- Row 2 -->
+                <div class="amenity-card yellow-amenity">
+                    <div class="am-icon">🍳</div>
+                    <p>Common kitchen</p>
+                </div>
+                <div class="amenity-card teal-amenity">
+                    <div class="am-icon">🧺</div>
+                    <p>In-house laundry</p>
+                </div>
+                <div class="amenity-card purple-amenity">
+                    <div class="am-icon">☕</div>
+                    <p>Evening cafe</p>
+                </div>
+                <!-- Row 3 -->
+                <div class="amenity-card pink-amenity">
+                    <div class="am-icon">🚿</div>
+                    <p>Hot showers</p>
+                </div>
+                <div class="amenity-card red-amenity">
+                    <div class="am-icon">🗺️</div>
+                    <p>City maps & info</p>
+                </div>
+                <div class="amenity-card blue-alt-amenity">
+                    <div class="am-icon">🎒</div>
+                    <p>Luggage lockers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Collab Section -->
+    <section class="collab-section">
+        <div class="container">
+            <div class="section-pill dark-teal-pill">COMMUNITY</div>
+            <h2>Collab with Coal Capital.</h2>
+            <p class="subtitle">Join our growing network of backpackers, artists, and creators.</p>
+            
+            <div class="collab-grid">
+                <!-- Card 1 -->
+                <div class="collab-card">
+                    <div class="collab-icon">🤝</div>
+                    <h4>Volunteer with us</h4>
+                    <p>Exchange your skills and time for free stays and unforgettable memories.</p>
+                    <a href="collab.html?category=Volunteer%20with%20us" class="btn-outline-dark">Apply Now</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="collab-card">
+                    <div class="collab-icon">🗺️</div>
+                    <h4>Partner with us as tour & travel</h4>
+                    <p>Help us curate hyper-local experiences for our international guests.</p>
+                    <a href="collab.html?category=Partner%20with%20us" class="btn-outline-dark">Apply Now</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="collab-card">
+                    <div class="collab-icon">📸</div>
+                    <h4>Become a creator</h4>
+                    <p>Film, photograph, and create content on-site to earn custom perks.</p>
+                    <a href="collab.html?category=Become%20a%20creator" class="btn-outline-dark">Apply Now</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="collab-card">
+                    <div class="collab-icon">🎸</div>
+                    <h4>Perform at Coal Capital</h4>
+                    <p>Bring your acoustic jams, stand-up sets, or poetry to our evening cafes.</p>
+                    <a href="collab.html?category=Perform%20at%20Coal%20Capital" class="btn-outline-dark">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="section-pill red-pill">STORY</div>
+            <h2 class="centered">Find your direction at<br>Coal Capital.</h2>
+            
+            <div class="divider-with-icon">
+                <span class="line"></span>
+                <div class="mini-compass">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#d34e40" stroke-width="1"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                </div>
+                <span class="line"></span>
+            </div>
+            
+            <p class="story-text">Tucked in the colourful lanes of Bengaluru, Coal Capital started as a passion project for a couple of travelers who knew exactly what a great hostel should feel like — warm, clean, social, and full of character. Every mural, hammock, and fairy light tells that story.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card red-stat">
+                    <h3>5yr</h3>
+                    <p>in operations</p>
+                </div>
+                <div class="stat-card teal-stat">
+                    <h3>70k+</h3>
+                    <p>happy faces</p>
+                </div>
+                <div class="stat-card yellow-stat">
+                    <h3>60</h3>
+                    <p>corners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Five Reasons Section -->
+    <section class="reasons-section">
+        <div class="container">
+            <div class="section-pill purple-pill">WHY CHOOSE US</div>
+            <h2>Five reasons travellers keep finding their way back.</h2>
+            
+            <div class="reasons-list">
+                <div class="reason-card red-reason">
+                    <div class="reason-num">1</div>
+                    <div class="reason-content">
+                        <h4>Colourful, character-packed spaces</h4>
+                        <p>Vibrant murals, airy rights, hammocks — every corner is designed to delight and inspire.</p>
+                    </div>
+                </div>
+                <div class="reason-card teal-reason">
+                    <div class="reason-num">2</div>
+                    <div class="reason-content">
+                        <h4>Spotless, vertical cleanliness</h4>
+                        <p>Clean spaces only! Daily maid services and austere rules ensure a pristine environment.</p>
+                    </div>
+                </div>
+                <div class="reason-card yellow-reason">
+                    <div class="reason-num">3</div>
+                    <div class="reason-content">
+                        <h4>A real community vibe</h4>
+                        <p>We're more than dorms; hang around people, discover coding times — less bar all around.</p>
+                    </div>
+                </div>
+                <div class="reason-card blue-reason">
+                    <div class="reason-num">4</div>
+                    <div class="reason-content">
+                        <h4>An easy, central location</h4>
+                        <p>Out on the main glades but steps away from transport, cafes, and markets. Easy.</p>
+                    </div>
+                </div>
+                <div class="reason-card green-reason">
+                    <div class="reason-num">5</div>
+                    <div class="reason-content">
+                        <h4>Flexible cancellations</h4>
+                        <p>Cancel for any normal rules no matter the world, life throws up away.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-pill purple-pill">REVIEWS</div>
+            <div class="rating-summary">
+                <div class="rating-score">4.9 <span class="rating-outof">/ 5 - 1,487</span></div>
+                <div class="stars">★★★★★</div>
+            </div>
+            
+            <div class="reviews-list">
+                <div class="review-card">
+                    <div class="review-icon orange-bg">«</div>
+                    <div class="review-content">
+                        <div class="review-header">
+                            <div>
+                                <h5>Priya R.</h5>
+                                <span>Guest • 1 wk</span>
+                            </div>
+                            <div class="stars small-stars">★★★★★</div>
+                        </div>
+                        <p>"The friends alone are worth the stay. It's a place that has incredibly warm energy — the staff clean everywhere incredibly rhythm. The cooking classes are looking mad and magic to do."</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-icon teal-bg">✓</div>
+                    <div class="review-content">
+                        <div class="review-header">
+                            <div>
+                                <h5>James H.</h5>
+                                <span>England • 2m</span>
+                            </div>
+                            <div class="stars small-stars">★★★★★</div>
+                        </div>
+                        <p>"Stayed 3 weeks on the monthly rate — an absolute dream. The work spots are fast everywhere, super chilled and the kitchen is fully equipped. Best hostel I've found in South Asia."</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-icon yellow-bg">"</div>
+                    <div class="review-content">
+                        <div class="review-header">
+                            <div>
+                                <h5>Ankit V.</h5>
+                                <span>India • 4 mo</span>
+                            </div>
+                            <div class="stars small-stars">★★★★★</div>
+                        </div>
+                        <p>"The female dorm was incredibly clean and the lockers are massive. Central walk is an easy area and explored the whole city. Compass has the best location — everything is spot-on."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA and Bottom -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-cta-box">
+                <h2>Your next adventure starts here.</h2>
+                <p>make it here — book in your compass locating stay.</p>
+                <button class="btn-dark-primary">Book Now ↗</button>
+                <div class="watermark-compass cta-watermark">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-accent-line"></div>
+        <div class="footer-bottom">
+            <p>© 2024 Coal Capital - Bengaluru - all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
